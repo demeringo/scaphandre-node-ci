@@ -9,7 +9,7 @@ FROM node:lts-bullseye as runtime
 WORKDIR app
 
 RUN apt-get update \
-    && DEBIAN_FRONTEND="noninteractive" apt-get install -y ca-certificates tzdata \
+    && DEBIAN_FRONTEND="noninteractive" apt-get install -y ca-certificates tzdata curl jq stress-ng\
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /app/scaphandre/target/release/scaphandre /usr/local/bin
