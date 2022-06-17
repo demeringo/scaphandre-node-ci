@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] - ReleaseDate
 
+## [0.0.3] - 2022-06-17
+
+### Added
+
+- Use scaph2cc v0.1.0 which export sa new field with energy usage in Watt-hours, and provides fixes on energy calculation.
+
 ## [0.0.2] - 2022-06-08
 
 ### Added
